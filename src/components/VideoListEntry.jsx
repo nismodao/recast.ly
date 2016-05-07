@@ -1,5 +1,12 @@
 var VideoListEntry = (props) => {
-  console.log('VideoListEntry',props);
+
+
+
+  // this.onClick = () => {
+  //   console.log('entry', this)
+  //  this.setState.currentVideo = {props.video.snippet.title};
+  // }
+
   return (<div className="video-list-entry">
     <div className="media-left media-middle">
       <img className="media-object" src={props.video.snippet.thumbnails.default.url} alt="" />
