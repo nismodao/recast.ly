@@ -23,5 +23,9 @@
     "chai": "^3.5.0",
     "mocha": "2.3.3",
     "sinon": "^1.17.3"
+  },
+  "scripts": {
+    "babel": "babel -- babel-preset-es2015 compiled/src/index.js",
+    "start": "live-server"
   }
 }
