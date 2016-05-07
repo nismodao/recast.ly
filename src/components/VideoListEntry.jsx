@@ -7,7 +7,9 @@ var VideoListEntry = (props) => {
   //  this.setState.currentVideo = {props.video.snippet.title};
   // }
 
-  return (<div className="video-list-entry">
+  console.log('entry', props.video.snippet.title)
+
+  return (<div className="video-list-entry" onClick={ () => props.updateVideo(props.video)}>
     <div className="media-left media-middle">
       <img className="media-object" src={props.video.snippet.thumbnails.default.url} alt="" />
     </div>
@@ -36,3 +38,5 @@ window.VideoListEntry = VideoListEntry;
 // new VideoListEntry(video)
 
 // <VideoListEntry video ={ [] };
+
+//<div className="video-list-entry-title" onClick={this.setState({currentVideo: props.video}).bind(this)}> </div>

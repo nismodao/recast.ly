@@ -19,6 +19,12 @@ class App extends React.Component {
     };
   }
 
+  updateVideo(video) {
+    //console.log('updateVideo called',this)
+    this.setState(this.state.currentVideo = video);
+  };
+  // console.log(this.updateVideo);
+
   render() {
     return (
       <div>
@@ -27,7 +33,7 @@ class App extends React.Component {
           <VideoPlayer video={this.state.currentVideo}/>
         </div>
         <div className="col-md-5">
-          <VideoList videos={this.state.library}/>
+          <VideoList videos={this.state.library} updateVideo={this.updateVideo.bind(this)}/>
         </div>
       </div>
     );

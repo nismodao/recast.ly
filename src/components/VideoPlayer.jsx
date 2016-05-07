@@ -2,7 +2,7 @@ var VideoPlayer = (props) => {
   //props will contain current video ---> passed down via App state
   //console.log('videoplayer', props)
 
-  return (<div className="video-player">
+  return (<div className="video-player" >
     <div className="embed-responsive embed-responsive-16by9">
       <iframe className="embed-responsive-item" src={'https://www.youtube.com/embed/' + props.video.id.videoId} allowFullScreen></iframe>
     </div>
